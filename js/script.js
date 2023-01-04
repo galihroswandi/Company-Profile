@@ -7,3 +7,5 @@ container.addEventListener('wheel', e => {
     const value = container.scrollLeft += e.deltaY;
     value <= 4511 ? container.scrollLeft += e.deltaY : null;
 })
+
+console.log('COba');
