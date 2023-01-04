@@ -27,6 +27,16 @@
                     <h1>Weesata</h1>
                 </header>
                 <footer>
+                    <a href="#" class="toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-align-center">
+                            <line x1="18" y1="10" x2="6" y2="10"></line>
+                            <line x1="21" y1="6" x2="3" y2="6"></line>
+                            <line x1="21" y1="14" x2="3" y2="14"></line>
+                            <line x1="18" y1="18" x2="6" y2="18"></line>
+                        </svg>
+                    </a>
                     <ul>
                         <li><a href="#" class="active">Beranda</a></li>
                         <li><a href="#">Tentang Kami</a></li>
@@ -112,10 +122,11 @@
             </section>
         </section>
 
-        <section id="carousel">
+        <!-- <section id="carousel">
+            <div class="scroll" role="none" id="scrollLine"></div>
             <h2 class="text-white">Paket Wisata</h2>
             <section class="carousel-wrapper">
-                <div class="carousel" role="none">
+                <div class="carousel" role="none" id="container-carousel">
                     <figure>
                         <img src="assets/img/sunset-beach.jfif" alt="">
                         <figcaption>Carousel 1</figcaption>
@@ -154,8 +165,96 @@
                     </figure>
                 </div>
             </section>
-        </section>
+        </section> -->
+        <div class="container">
+            <div class="slider">
+
+                <div class="box1 box">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <h1>I'am the first Box</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, enim non quos pariatur
+                            error quis in, porro natus sequi corporis vitae beatae ipsum consectetur reprehenderit.</p>
+                        <button>Check Now</button>
+                    </div>
+                    <div class="illustration">
+                        <div class="inner"></div>
+                    </div>
+                </div>
+
+                <div class="box2 box">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <h1>I'am the second Box</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, enim non quos pariatur
+                            error quis in, porro natus sequi corporis vitae beatae ipsum consectetur reprehenderit.</p>
+                        <button>Check Now</button>
+                    </div>
+                    <div class="illustration">
+                        <div class="inner"></div>
+                    </div>
+                </div>
+
+                <div class="box3 box">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <h1>I'am the third Box</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, enim non quos pariatur
+                            error quis in, porro natus sequi corporis vitae beatae ipsum consectetur reprehenderit.</p>
+                        <button>Check Now</button>
+                    </div>
+                    <div class="illustration">
+                        <div class="inner"></div>
+                    </div>
+                </div>
+
+                <div class="box4 box">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <h1>I'am the fpurth Box</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, enim non quos pariatur
+                            error quis in, porro natus sequi corporis vitae beatae ipsum consectetur reprehenderit.</p>
+                        <button>Check Now</button>
+                    </div>
+                    <div class="illustration">
+                        <div class="inner"></div>
+                    </div>
+                </div>
+
+                <div class="box5 box">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <h1>I'am the fpurth Box</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, enim non quos pariatur
+                            error quis in, porro natus sequi corporis vitae beatae ipsum consectetur reprehenderit.</p>
+                        <button>Check Now</button>
+                    </div>
+                    <div class="illustration">
+                        <div class="inner"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="prev" width="56.898" height="91" viewBox="0 0 56.898 91">
+                <path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(0 91) rotate(-90)" fill="#fff" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="next" width="56.898" height="91" viewBox="0 0 56.898 91">
+                <path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(56.898) rotate(90)" fill="#fff" />
+            </svg>
+
+            <div class="trail">
+                <div class="box1 active">1</div>
+                <div class="box1 active">2</div>
+                <div class="box1 active">3</div>
+                <div class="box1 active">4</div>
+                <div class="box1 active">5</div>
+            </div>
+        </div>
     </main>
+
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

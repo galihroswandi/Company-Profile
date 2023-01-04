@@ -82,6 +82,14 @@ header>.bg>img{
     justify-content: center;
 }
 
+.navbar>nav>footer>.toggle{
+    display: none;
+}
+
+.navbar>nav>footer>.toggle>svg{
+    color: #fff;
+}
+
 .navbar>nav>footer>ul{
     display: flex;
     justify-content: center;
@@ -153,9 +161,9 @@ header>.bg>img{
 
 /* Main Styles */
 main{
-    background: linear-gradient(transparent, var(--black-color) 2%);
+    background: linear-gradient(transparent, var(--black-color) 4%);
     min-height: 200vh;
-    margin-top: -2.5rem;
+    margin-top: 3rem;
     position: relative;
     z-index: 2;
     padding: 13.5rem 7.5rem;
@@ -242,6 +250,31 @@ main>section#carousel>h2{
     margin-bottom: 5rem;
 }
 
+main>section#carousel>.carousel-wrapper>.carousel{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+main>section#carousel>.carousel-wrapper>.carousel>figure{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main>section#carousel>.scroll{
+    position: absolute;
+    height: 5px;
+    width: 200px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 1270px){
     main>section.cards{
@@ -259,11 +292,58 @@ main>section#carousel>h2{
     main>section.cards{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    main>section.about{
+        grid-template-columns: minmax(40%, .5fr) 1fr;
+    }
+
+    main>section.about>section.img:nth-child(1)>img{
+        border-radius: .5rem;
+    }
+
+    main>section.about>section.img:nth-child(3){
+        display: none;
+    }
 }
 
 @media screen and (max-width: 800px){
     main{
         padding: 13.5rem 4rem;
+    }
+}
+
+@media screen and (max-width: 760px){
+    main>section.about{
+        grid-template-columns: 1fr;
+    }
+
+    main>section.about>section.img:nth-child(1){
+        display: none;
+    }
+
+    .navbar>nav>header{
+        text-align: left;
+        padding-left: 2rem;
+    }
+
+    .navbar>nav{
+        display: grid;
+        grid-template-columns: minmax(10%, 1fr) minmax(50px, .2fr);
+    }
+
+    .navbar>nav>footer>.toggle{
+        display: block;
+    }
+
+    .navbar>nav>footer>ul{
+        position: absolute;
+        top: 4rem;
+        right: 1rem;
+        background-color: rgba(0,0,0, .5);
+        display: grid;
+        gap: 1.5rem;
+        border-radius: .5rem;
+        padding: 1rem;
     }
 }
 
