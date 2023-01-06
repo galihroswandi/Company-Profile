@@ -27,6 +27,8 @@ toggleButton.addEventListener('click', () => {
         navList.style.opacity = 1;
         navList.style.transform = 'scale(1)';
     }
-
 })
 
+
+
+// Carousel
