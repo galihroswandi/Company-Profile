@@ -32,3 +32,48 @@ toggleButton.addEventListener('click', () => {
 
 
 // Carousel
+const carousel = Array.from(document.querySelectorAll('#container-carousel>figure'));
+
+let transformValue = 0;
+let trailValue = 0;
+let interval = 4000;
+
+const slide = (condition) => {
+
+    // hapus interval ketika tombol di klik
+    // clearInterval(start);
+
+    condition === "next" ? nextSlide() : prevSlide();
+
+    move(transformValue, trailValue);
+
+}
+
+// let start = setInterval(() => slide('next'), interval);
+
+const nextSlide = () => {
+
+    transformValue === 50 ? transformValue = 0 : transformValue += 425;
+}
+
+const prevSlide = () => {
+    console.log('prev slide active');
+}
+
+const move = (tValue, trail) => {
+    // console.log(Math.floor(window.innerWidth));
+    if (Math.floor(window.innerWidth) >= 1440) {
+        
+        for(let i = 0; i <= carousel.length; i++){
+            i >= 0 && i < 4 ? console.log(carousel[i]) : null;
+            carousel[i].style.transform = `translateX(-${tValue}%)`;
+        }
+
+        // newSlide.style.transform = `translateX(-${tValue}%)`;
+        // console.log(newSlide);
+    }
+}
+
+document.querySelectorAll('svg').forEach(nop => {
+    nop.addEventListener('click', () => nop.classList.contains('next') ? slide('next') : slide('prev'));
+})

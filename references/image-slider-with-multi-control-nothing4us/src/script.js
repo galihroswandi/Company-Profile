@@ -3,6 +3,8 @@ const slider = document.querySelector(".slider")
 // All trails 
 const trail = document.querySelector(".trail").querySelectorAll("div")
 
+console.log(slider.scrollWidth);
+
 // Transform value
 let value = 0
 // trail index number

@@ -267,6 +267,8 @@ main>section#carousel>.carousel-wrapper>.carousel>figure{
     color: #fff;
     position: relative;
     cursor: pointer;
+    transition: all 0.25s ease-in;
+    transform: translateX(0);
 }
 
 main>section#carousel>.carousel-wrapper>.carousel>figure>figcaption{
@@ -288,10 +290,10 @@ main>section#carousel>.carousel-wrapper{
 }
 
 main>section#carousel>.carousel-wrapper>SVG.next{
+    display: block;
     position: absolute;
     top: 8.5rem;
-    left: -1.3rem;
-    display: block;
+    right: -2.6rem;
     width: 65px;
     height: 65px;
     fill: var(--acsent-color);
@@ -304,10 +306,10 @@ main>section#carousel>.carousel-wrapper>SVG.next:hover{
 }
 
 main>section#carousel>.carousel-wrapper>SVG.prev{
-    position: absolute;
-    top: 8.5rem;
-    right: -2.6rem;
     display: block;
+    position: absolute;
+    left: -1.3rem;
+    top: 8.5rem;
     width: 65px;
     height: 65px;
     fill: var(--acsent-color);
