@@ -283,14 +283,43 @@ main>section#carousel>.carousel-wrapper>.carousel>figure>img{
     width: 16rem;
 }
 
-/* main>section#carousel>.scroll{
+main>section#carousel>.carousel-wrapper{
+    position: relative;
+}
+
+main>section#carousel>.carousel-wrapper>SVG.next{
     position: absolute;
-    height: 5px;
-    width: 200px;
-    background-color: #fff;
-    top: 0;
-    left: 0;
-} */
+    top: 8.5rem;
+    left: -1.3rem;
+    display: block;
+    width: 65px;
+    height: 65px;
+    fill: var(--acsent-color);
+    cursor: pointer;
+}
+
+main>section#carousel>.carousel-wrapper>SVG.next:hover{
+    fill: rgba(251, 187, 35, .8);
+    transition: all .25s ease-in-out;
+}
+
+main>section#carousel>.carousel-wrapper>SVG.prev{
+    position: absolute;
+    top: 8.5rem;
+    right: -2.6rem;
+    display: block;
+    width: 65px;
+    height: 65px;
+    fill: var(--acsent-color);
+    cursor: pointer;
+}
+
+main>section#carousel>.carousel-wrapper>SVG.prev:hover{
+    fill: rgba(251, 187, 35, .8);
+    transition: all .25s ease-in-out;
+}
+
+
 
 footer#section-footer{
     display: grid;
