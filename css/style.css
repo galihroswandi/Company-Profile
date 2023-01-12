@@ -431,6 +431,18 @@ footer#section-footer>section>header>h2{
     }
 }
 
+@media screen and (max-width: 875px){
+    footer#section-footer{
+        grid-template-columns: repeat(2, 40%);
+        gap: 3rem;
+        padding-bottom: 4rem;
+    }
+    footer#section-footer>section{
+        justify-self: center;
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 800px){
     main{
         padding: 13.5rem 4rem;
@@ -482,12 +494,33 @@ footer#section-footer>section>header>h2{
 
 @media screen and (max-width: 650px){
     main{
-        padding: 13.5rem 2rem;
+        padding: 13.5rem 3rem;
+        box-sizing: border-box;
     }
+
 }
 
 @media screen and (max-width: 523px){
     main>section.cards{
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 481px){
+    .navbar>nav>header{
+        width: 100%;
+        text-align: center;
+    }
+
+    .search{
+        width: 80%;
+        box-sizing: border-box;
+        font-size: 1em;
+        padding: 2rem 4rem;
+    }
+
+    .search>.input-group>input{
+        padding: .5rem 1rem;
+        font-size: 1rem;
     }
 }
