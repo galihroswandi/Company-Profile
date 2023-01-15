@@ -534,4 +534,30 @@ footer#section-footer>section>header>h2{
     .search>.input-group>button>svg{
       width: 20px;
     }
+
+    footer#section-footer{
+      padding: 2rem;
+    }
+
+    footer#section-footer h2{
+      font-size: 1.1em;
+    }
+
+    footer#section-footer figcaption, footer#section-footer p{
+      font-size: .9em !important;
+      font-weight: 300 !important;
+    }
+
+    footer#section-footer svg{
+      width: 5rem !important;
+    }
+
+    footer#section-footer > .help > figure.call > svg{
+      margin-left: -1.5rem;
+    }
+
+    footer#section-footer > .help > figure.call> figcaption{
+      margin-left: -2rem !important;
+      width: 10rem;
+    }
 }
