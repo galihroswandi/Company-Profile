@@ -521,7 +521,17 @@ footer#section-footer>section>header>h2{
 
     .search>.input-group>input{
         padding: .7rem 1rem;
-        font-size: .8rem;
+        font-size: .9rem;
         font-weight: 400;
+    }
+
+    .search>.input-group>button{
+        padding: .4rem;
+        padding-right: .55rem;
+        padding-left: .55rem;
+    }
+
+    .search>.input-group>button>svg{
+      width: 20px;
     }
 }
