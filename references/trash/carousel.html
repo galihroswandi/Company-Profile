@@ -1,0 +1,394 @@
+<!-- <section id="slider">
+            <h2>Paket Wisata</h2>
+            <div class="container">
+                <div class="slider">
+
+                    <div class="box1 box">
+                        <div class="bg"></div>
+                        <div class="details">
+                            <h1>Bali indonesia</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, enim non quos
+                                pariatur
+                                error quis in, porro natus sequi corporis vitae beatae ipsum consectetur reprehenderit.
+                            </p>
+                            <button>Check Now</button>
+                        </div>
+                        <div class="illustration">
+                            <div class="inner" style="background: url('assets/img/sunset-beach.jfif'); background-size: cover;"></div>
+                        </div>
+                    </div>
+
+                    <div class="box2 box">
+                        <div class="bg"></div>
+                        <div class="details">
+                            <h1>I'am the second Box</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, enim non quos
+                                pariatur
+                                error quis in, porro natus sequi corporis vitae beatae ipsum consectetur reprehenderit.
+                            </p>
+                            <button>Check Now</button>
+                        </div>
+                        <div class="illustration">
+                            <div class="inner"></div>
+                        </div>
+                    </div>
+
+                    <div class="box3 box">
+                        <div class="bg"></div>
+                        <div class="details">
+                            <h1>I'am the third Box</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, enim non quos
+                                pariatur
+                                error quis in, porro natus sequi corporis vitae beatae ipsum consectetur reprehenderit.
+                            </p>
+                            <button>Check Now</button>
+                        </div>
+                        <div class="illustration">
+                            <div class="inner"></div>
+                        </div>
+                    </div>
+
+                    <div class="box4 box">
+                        <div class="bg"></div>
+                        <div class="details">
+                            <h1>I'am the fpurth Box</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, enim non quos
+                                pariatur
+                                error quis in, porro natus sequi corporis vitae beatae ipsum consectetur reprehenderit.
+                            </p>
+                            <button>Check Now</button>
+                        </div>
+                        <div class="illustration">
+                            <div class="inner"></div>
+                        </div>
+                    </div>
+
+                    <div class="box5 box">
+                        <div class="bg"></div>
+                        <div class="details">
+                            <h1>I'am the fpurth Box</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, enim non quos
+                                pariatur
+                                error quis in, porro natus sequi corporis vitae beatae ipsum consectetur reprehenderit.
+                            </p>
+                            <button>Check Now</button>
+                        </div>
+                        <div class="illustration">
+                            <div class="inner"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="prev" width="56.898" height="91" viewBox="0 0 56.898 91">
+                    <path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(0 91) rotate(-90)"
+                        fill="#fff" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="next" width="56.898" height="91" viewBox="0 0 56.898 91">
+                    <path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(56.898) rotate(90)"
+                        fill="#fff" />
+                </svg>
+
+                <div class="trail">
+                    <div class="box1 active">1</div>
+                    <div class="box2">2</div>
+                    <div class="box3">3</div>
+                    <div class="box4">4</div>
+                    <div class="box5">5</div>
+                </div>
+            </div>
+        </section> -->
+
+
+<style>
+    /* Slider styles */
+    /* section#slider{
+    margin-top: 9rem;
+}
+
+section#slider>h2{
+    color: var(--acsent-color);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.1rem;
+}
+
+.container{
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.slider{
+    display: flex;
+    width: 500%;
+    height: 25rem;
+    transition: all .25s ease-in;
+    transform: translateX(0);
+}
+
+.slider>.box{
+    height: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: #ddd;
+    color: #fff;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider>.box>.bg{
+    background-color: rgba(0, 0, 0, .2);
+    width: 55%;
+    height: 100%;
+    padding: 2rem;
+    transform: skewX(7deg);
+    position: absolute;
+    left: -10%;
+    padding-left: 8rem;
+    transform-origin: 0 100%;
+}
+
+.slider>.box>.bg::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: inherit;
+    pointer-events: none;
+    transform: skewX(10deg);
+}
+
+
+.slider>.box>.details{
+    padding: 1rem 5rem;
+    z-index: 2;
+    grid-column: 1/span 1;
+    grid-row: 1/-1;
+    box-sizing: border-box;
+}
+
+.slider>.box>.details>h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+
+.slider>.box>.details>p{
+    display: inline-block;
+    font-size: 1rem;
+    color: #B5B4B4;
+    margin-bottom: 1rem;
+}
+
+.slider>.box>.details>button{
+    padding: .5rem 2rem;
+    color: #fff;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.slider>.box>.details>button:hover {
+    opacity: .8;
+}
+
+.slider>.box>.details>button:focus {
+    outline: none;
+    border: none;
+}
+
+
+.slider>.box1 {
+    background-color: #500033;
+}
+
+.slider>.box1>.illustration>.inner {
+    background-color: #FF0077;
+}
+
+.slider>.box1>.illustration>.inner::after,
+.slider>.box1>.illustration>.inner::before {
+    background-color: rgba(255, 0, 119, 0.4);
+}
+
+.slider>.box1>.details>button {
+    background-color: #FF0077;
+}
+
+
+.slider>.box2 {
+    background-color: #000050;
+}
+
+.slider>.box2>.illustration>.inner {
+    background-color: #0033FF;
+}
+
+.slider>.box2>.illustration>.inner::after,
+.slider>.box2>.illustration>.inner::before {
+    background-color: rgba(0, 51, 255, 0.4);
+}
+
+.slider>.box2>.details>button {
+    background-color: #0033FF;
+}
+
+
+.slider>.box3 {
+    background-color: #00501D;
+}
+
+.slider>.box3>.illustration>.inner {
+    background-color: #00ff44;
+}
+
+.slider>.box3>.illustration>.inner::after,
+.slider>.box3>.illustration>.inner::before {
+    background-color: rgba(0, 255, 68, 0.4);
+}
+
+.slider>.box3>.details>button {
+    background-color: #00ff44;
+}
+
+
+.slider>.box4 {
+    background-color: #554D00;
+}
+
+.slider>.box4>.illustration>.inner {
+    background-color: #ff4e00;
+}
+
+.slider>.box4>.illustration>.inner::after,
+.slider>.box4>.illustration>.inner::before {
+    background-color: rgba(255, 78, 0, 0.4);
+}
+
+.slider>.box4>.details>button {
+    background-color: #FF4E00;
+}
+
+
+.slider>.box5 {
+    background-color: #300050;
+}
+
+.slider>.box5>.illustration>.inner {
+    background-color: #8000FF;
+}
+
+.slider>.box5>.illustration>.inner::after,
+.slider>.box5.illustration>.inner::before {
+    background-color: rgba(128, 0, 255, 0.4);
+}
+
+.slider>.box5>.details>button {
+    background-color: #8000FF;
+}
+
+
+.slider>.box>.illustration{
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+    justify-self: center;
+}
+
+.slider>.box>.illustration>div{
+    height: 12rem;
+    width: 10rem;
+    border-radius: 1rem;
+    background-color: #FF0077;
+    position: relative;
+    transform: skewX(-10deg);
+}
+
+.slider>.box>.illustration>div::after,
+.slider>.box>.illustration>div::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    top: 0;
+    left: 0;
+}
+
+.slider>.box>.illustration>div::after {
+    transform: translate(4rem, -1rem);
+}
+
+.slider>.box>.illustration>div::before {
+    transform: translate(2rem, -2rem);
+}
+
+.prev,
+.next,
+.trail {
+    z-index: 10000;
+    position: absolute;
+}
+
+.prev,
+.next {
+    width: 4rem;
+    cursor: pointer;
+    opacity: .2;
+    transition: all .3s ease;
+    width: 2rem;
+}
+
+.prev:hover,
+.next:hover {
+    opacity: 1;
+}
+
+.prev {
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+}
+
+.next {
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+}
+
+.trail {
+    bottom: .1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    text-align: center;
+    font-size: .9rem;
+}
+
+.trail>div {
+    padding: .8rem;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+    opacity: .3;
+    transition: all .3s ease;
+}
+
+.trail div:hover {
+    opacity: 0.6;
+}
+
+.active {
+    opacity: 1 !important;
+} */
+</style>

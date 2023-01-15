@@ -516,11 +516,12 @@ footer#section-footer>section>header>h2{
         width: 80%;
         box-sizing: border-box;
         font-size: 1em;
-        padding: 2rem 4rem;
+        padding: 2rem 2.5rem;
     }
 
     .search>.input-group>input{
-        padding: .5rem 1rem;
-        font-size: 1rem;
+        padding: .7rem 1rem;
+        font-size: .8rem;
+        font-weight: 400;
     }
 }
